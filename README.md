@@ -1,6 +1,6 @@
 This is an example how to use this base image:
 
-'''
+```
 FROM odise/meteor-base:latest
 
 # add your app to the container
@@ -29,3 +29,4 @@ CMD bash -c 'export METEOR_SETTINGS=`cat /meteor/settings.json` && forever -w ./
 '''
 
 Size of the base image: ~530mb.
+```
