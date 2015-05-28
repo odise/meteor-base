@@ -26,7 +26,7 @@ RUN touch .foreverignore
  
 # Define default command that runs the node app on container port 8282
 CMD bash -c 'export METEOR_SETTINGS=`cat /meteor/settings.json` && forever -w ./main.js --production'
-'''
+```
+
 
 Size of the base image: ~530mb.
-```
