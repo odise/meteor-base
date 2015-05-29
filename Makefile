@@ -20,7 +20,7 @@ run:
 	docker run  \
 		-ti --rm \
 		--name meteor \
-		-p 80:8282 \
+		-p 80:3000 \
     $(IMAGE) /bin/bash
 	
 release:
