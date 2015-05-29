@@ -1,7 +1,7 @@
 FROM node:0.10-slim
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections \
-    && apt-get update && apt-get -y update \
+    && apt-get update && apt-get -y upgrade \
     && apt-get -y install bzip2 curl
 RUN npm install --silent -g forever phantomjs
  
